@@ -13,7 +13,7 @@ function Get-ADDomainControllerCertifiate
             Specifies the Active Directory DNS name.
         .PARAMETER Port
             LDAPS port for domain controller: 636 (default)
-            LDAPS port for global catalog: 3289
+            LDAPS port for global catalog: 3269
         .DESCRIPTION
             The cmdlet 'Get-ADDomainControllerCertifiate' retrieves the LDAP over TSL/SSL certificate properties.
         .EXAMPLE
