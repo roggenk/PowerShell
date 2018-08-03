@@ -9,7 +9,7 @@ function Get-ADDomainControllerCertifiate
             Retrieves the LDAPS certificate properties.
         .PARAMETER ComputerName
             Specifies the Active Directory domain controller.
-        .PARAMETER DomainName
+        .PARAMETER Domain
             Specifies the Active Directory DNS name.
         .PARAMETER Port
             LDAPS port for domain controller: 636 (default)
