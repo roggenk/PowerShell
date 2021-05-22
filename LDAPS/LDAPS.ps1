@@ -2,7 +2,7 @@
 ## Requirement: Dependency on PowerShell module 'ActiveDirectory' (WindowsFeature: RSAT-AD-PowerShell)
 
 ####################################################################################
-function Get-ADDomainControllerCertifiate
+function Get-ADDomainControllerCertificate
 {
     <#
         .SYNOPSIS
