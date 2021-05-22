@@ -15,21 +15,21 @@ function Get-ADDomainControllerCertificate
             LDAPS port for domain controller: 636 (default)
             LDAPS port for global catalog: 3269
         .DESCRIPTION
-            The cmdlet 'Get-ADDomainControllerCertifiate' retrieves the LDAP over TSL/SSL certificate properties.
+            The cmdlet 'Get-ADDomainControllerCertificate' retrieves the LDAP over TSL/SSL certificate properties.
         .EXAMPLE
-            Get-ADDomainControllerCertifiate -ComputerName DC01
+            Get-ADDomainControllerCertificate -ComputerName DC01
         .EXAMPLE
-            Get-ADDomainControllerCertifiate -ComputerName DC01,DC02 | Select ComputerName,Port,Subject,Thumbprint
+            Get-ADDomainControllerCertificate -ComputerName DC01,DC02 | Select ComputerName,Port,Subject,Thumbprint
         .EXAMPLE
-            Get-ADDomainControllerCertifiate DC01,DC02
+            Get-ADDomainControllerCertificate DC01,DC02
         .EXAMPLE
-            Get-ADDomainControllerCertifiate DC01 -Port 3269
+            Get-ADDomainControllerCertificate DC01 -Port 3269
         .EXAMPLE
-            Get-ADDomainControllerCertifiate -Domain domain.local
+            Get-ADDomainControllerCertificate -Domain domain.local
         .EXAMPLE
-            Get-ADDomainControllerCertifiate -Domain domain.local | Select-Object ComputerName,Port,Subject,Thumbprint
+            Get-ADDomainControllerCertificate -Domain domain.local | Select-Object ComputerName,Port,Subject,Thumbprint
         .EXAMPLE
-            Get-ADDomainControllerCertifiate -Domain domain.local -Port 3269 | Select-Object ComputerName,Port,Subject,Thumbprint
+            Get-ADDomainControllerCertificate -Domain domain.local -Port 3269 | Select-Object ComputerName,Port,Subject,Thumbprint
     #>
     [Cmdletbinding(DefaultParameterSetName='ComputerName')]
     param(
