@@ -142,7 +142,7 @@ function Get-ADLDAPUnsecureConnection
     {
         foreach($Computer in $ComputerName)
         {
-            $Events = Get-WinEvent -FilterHashtable @{LogName="Directory Service";ID='2889';StartTime="$(Get-Date)";EndTime="$((Get-Date).AddDays(-$LastDays))"} -ComputerName $Computer -ErrorAction SilentlyContinue
+            $Events = Get-WinEvent -FilterHashtable @{LogName="Directory Service";ID='2889';EndTime="$(Get-Date)";StartTime="$((Get-Date).AddDays(-$LastDays))"} -ComputerName $Computer -ErrorAction SilentlyContinue
             # $Events = Get-WinEvent -FilterHashtable @{LogName="Directory Service";ID='2889'} -ComputerName $Computer -ErrorAction SilentlyContinue
             foreach ($Event in $Events)
             {
